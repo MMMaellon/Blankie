@@ -4,10 +4,10 @@ on:
   workflow_dispatch:
   push:
     branches: main
-    paths: Packages/com.mmmaellon.lower-case-name/**
+    paths: Packages/com.mmmaellon.blankie/**
 
 env:
-  packageName: "com.mmmaellon.lower-case-name"
+  packageName: "com.mmmaellon.blankie"
 
 permissions:
   contents: write

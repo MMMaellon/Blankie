@@ -1,0 +1,22 @@
+{
+    "name": "com.mmmaellon.blankie",
+    "rootNamespace": "",
+    "references": [
+        "VRC.SDK3",
+        "VRC.SDKBase",
+        "VRC.Udon",
+        "UdonSharp.Runtime",
+        "UdonSharp.Editor",
+        "Unity.TextMeshPro",
+        "com.mmmaellon.lightsync"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

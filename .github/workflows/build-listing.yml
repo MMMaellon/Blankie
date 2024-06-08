@@ -1,7 +1,7 @@
 name: Build Repo Listing
 
 env:
-  packageName: com.mmmaellon.lower-case-name
+  packageName: com.mmmaellon.blankie
   listPublishDirectory: Website
   pathToCi: ci
   

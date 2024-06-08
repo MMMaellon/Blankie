@@ -1,26 +1,32 @@
 {
   "dependencies": {
     "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28"
+      "version": "0.1.29"
     },
-    "com.vrchat.worlds": {
-      "version": "3.5.1"
+    "com.mmmaellon.lightsync": {
+      "version": "1.1.4"
     }
   },
   "locked": {
-    "com.vrchat.core.vpm-resolver": {
-      "version": "0.1.28",
-      "dependencies": {}
-    },
     "com.vrchat.worlds": {
-      "version": "3.5.1",
+      "version": "3.6.1",
       "dependencies": {
-        "com.vrchat.base": "3.5.1"
+        "com.vrchat.base": "3.6.1"
       }
     },
     "com.vrchat.base": {
-      "version": "3.5.1",
+      "version": "3.6.1",
       "dependencies": {}
+    },
+    "com.vrchat.core.vpm-resolver": {
+      "version": "0.1.29",
+      "dependencies": {}
+    },
+    "com.mmmaellon.lightsync": {
+      "version": "1.1.4",
+      "dependencies": {
+        "com.vrchat.worlds": "^3.5.2"
+      }
     }
   }
 }
