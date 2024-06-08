@@ -1,0 +1,25 @@
+{
+    "name": "com.mmmaellon.lower-case-name",
+    "displayName": "STARDENBURDENHARDENBART",
+    "version": "0.0.0",
+    "unity": "2022.3",
+    "description": "",
+    "url": "https://github.com/MMMaellon/lower-case-name.git",
+    "dependencies": {},
+    "gitDependencies": {},
+    "author": {
+        "name": "MMMaellon",
+        "email": "mmmaellon@gmail.com",
+        "url": "https://twitter.com/MMMaellon"
+    },
+    "vpmDependencies": {
+        "com.vrchat.worlds": "^3.5.2"
+    },
+    "samples": [
+        {
+            "displayName": "STARDENBURDENHARDENBART Example Scene",
+            "description": "An example scene showing off the capabilities of STARDENBURDENHARDENBART.",
+            "path": "Samples~/Example"
+        }
+    ]
+}
