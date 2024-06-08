@@ -90,8 +90,8 @@ namespace MMMaellon.Blankie
                         }
                     }
                     point.neighbors = closeEnoughNeighbors.ToArray();
+                    point.sync = point.GetComponent<LightSync.LightSync>();
                 }
-
             }
         }
 #endif

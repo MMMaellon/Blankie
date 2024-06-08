@@ -1,7 +1,7 @@
 {
     "name": "com.mmmaellon.blankie",
     "displayName": "Blankie",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "unity": "2022.3",
     "description": "",
     "url": "https://github.com/MMMaellon/blankie.git",
@@ -14,7 +14,7 @@
     },
     "vpmDependencies": {
         "com.vrchat.worlds": "^3.5.2",
-        "com.mmmaellon.lightsync": "^1.1.4"
+        "com.mmmaellon.lightsync": "^1.1.6"
     },
     "samples": [
         {

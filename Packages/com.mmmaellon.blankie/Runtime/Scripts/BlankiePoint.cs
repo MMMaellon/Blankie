@@ -14,7 +14,6 @@ namespace MMMaellon.Blankie
         public Transform parent;
         public void Start()
         {
-            sync = GetComponent<LightSync.LightSync>();
             neighborOffsets = new Vector3[neighbors.Length];
 
             for (int i = 0; i < neighbors.Length; i++)
