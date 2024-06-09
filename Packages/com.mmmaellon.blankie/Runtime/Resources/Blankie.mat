@@ -8,13 +8,15 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Blankie
-  m_Shader: {fileID: 4800000, guid: deca4036fd687004ca874acb20f3fd5f, type: 3}
+  m_Shader: {fileID: 4800000, guid: ed04895971c00fc498c346df2ac0e9b4, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords:
-  - _LIGHTMAPSPECULAR
+  - _SOURCE_SPECULARALPHA
   m_InvalidKeywords:
   - _BAKERY_NONE
+  - _BLENDMAINNORMAL_ON
+  - _LIGHTMAPSPECULAR
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -81,22 +83,38 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - _AlphaToMaskMode: 0
+    - _AoIntensity: 1
     - _Bakery: 0
     - _BakeryVertexLM: 0
+    - _BlendMainNormal: 1
+    - _Brightness: 1
     - _BumpScale: 1
     - _BumpShadowHardness: 50
     - _BumpShadowHeightScale: 0.2
+    - _ContrastDetailMap: 0
+    - _Cull: 0
     - _CullMode: 0
     - _Cutoff: 0.5
+    - _DetailBrightness: 1
     - _DetailNormalMapScale: 1
+    - _DetailSaturation: 0
     - _DstBlend: 0
+    - _EmissionIntensity: 1
+    - _EnableDetailMask: 0
     - _ExposureOcclusion: 0.2
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
+    - _IntensityMask: 1
+    - _InvertABaseColor: 0
+    - _InvertMask: 0
     - _LTCGI: 0
     - _LightmapSpecular: 1
     - _LightmapSpecularMaxSmoothness: 0.9
@@ -105,16 +123,27 @@ Material:
     - _NormalMapShadows: 0
     - _OcclusionStrength: 1
     - _Parallax: 0.02
+    - _Saturation: 0
     - _ShaderType_Cloth: 1
     - _SmoothnessTextureChannel: 0
+    - _Source: 0
+    - _SourceMask: 0
     - _SpecularHighlights: 1
+    - _SpecularIntensity: 0.2
+    - _SpreadDetailMap: 0
     - _SrcBlend: 1
     - _UVSec: 0
+    - _VisualizeMask: 0
+    - _ZTest: 4
     - _ZWrite: 1
+    - __dirty: 1
     - _specularAntiAliasingThreshold: 0.25
     - _specularAntiAliasingVariance: 0.15
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GlobalXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}
     - _SpecColor: {r: 0.5943396, g: 0.5943396, b: 0.5943396, a: 1}
+    - _SpecularColor: {r: 1, g: 1, b: 1, a: 0}
   m_BuildTextureStacks: []

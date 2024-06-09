@@ -34,8 +34,26 @@ namespace MMMaellon.Blankie
             {
                 heldCount--;
             }
-
             SendCustomEventDelayedFrames(nameof(Unstretch), 2);
+        }
+
+        public void Start()
+        {
+            SetGravity();
+        }
+
+        public override void OnDeserialization()
+        {
+            SetGravity();
+        }
+
+        public void SetGravity()
+        {
+            foreach (var point in points)
+            {
+                point.sync.kinematicFlag = !useGravity;
+                point.sync.rigid.isKinematic = !useGravity;
+            }
         }
 
         int lastFrame = -1001;
@@ -51,15 +69,6 @@ namespace MMMaellon.Blankie
             movedPoint = false;
             foreach (var point in points)
             {
-                if (point.sync.kinematicFlag == useGravity)
-                {
-                    point.sync.kinematicFlag = !useGravity;
-                    if (point.sync.state == LightSync.LightSync.STATE_PHYSICS)
-                    {
-                        point.sync.rigid.isKinematic = !useGravity;
-                    }
-                    point.sync.Sync();
-                }
                 movedPoint = point.Unstretch(simSpeed) || movedPoint;
             }
             if (movedPoint || heldCount > 0)
