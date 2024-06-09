@@ -1,8 +1,6 @@
 ﻿
 using UdonSharp;
-using UnityEngine;
 using VRC.SDKBase;
-using VRC.Udon;
 
 namespace MMMaellon.Blankie
 {
@@ -14,6 +12,10 @@ namespace MMMaellon.Blankie
             Networking.SetOwner(Networking.LocalPlayer, blankie.gameObject);
             blankie.useGravity = !blankie.useGravity;
             blankie.RequestSerialization();
+            foreach (var point in blankie.points)
+            {
+                point.sync.Sync();
+            }
         }
     }
 }
