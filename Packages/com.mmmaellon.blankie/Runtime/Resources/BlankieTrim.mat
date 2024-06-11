@@ -140,7 +140,7 @@ Material:
     - _specularAntiAliasingThreshold: 0.25
     - _specularAntiAliasingVariance: 0.15
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.6226415, g: 0.6226415, b: 0.6226415, a: 1}
     - _DetailColor: {r: 1, g: 1, b: 1, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _GlobalXYTilingXYZWOffsetXY: {r: 1, g: 1, b: 0, a: 0}

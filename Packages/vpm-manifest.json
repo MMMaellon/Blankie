@@ -4,7 +4,7 @@
       "version": "0.1.29"
     },
     "com.mmmaellon.lightsync": {
-      "version": "1.1.6"
+      "version": "1.1.10"
     }
   },
   "locked": {
@@ -23,7 +23,7 @@
       "dependencies": {}
     },
     "com.mmmaellon.lightsync": {
-      "version": "1.1.6",
+      "version": "1.1.10",
       "dependencies": {
         "com.vrchat.worlds": "^3.5.2"
       }
