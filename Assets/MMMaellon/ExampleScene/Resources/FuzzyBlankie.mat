@@ -171,7 +171,7 @@ Material:
     - _Contrast: 3
     - _Cull: 0
     - _Cutoff: 0.5
-    - _DebuggingGroup: 1
+    - _DebuggingGroup: 0
     - _DebuggingLog: 0
     - _Decal0Group: 0
     - _Decal1Group: 0
@@ -383,7 +383,7 @@ Material:
     - _InitialDensity: 0.5
     - _LightPenetrationDepth: 0.1
     - _LightWraparound: 7.5
-    - _LightingGroup: 1
+    - _LightingGroup: 0
     - _MainMapsGroup: 1
     - _MarkingsContrast: 1
     - _MarkingsDensity: 3.85
@@ -454,7 +454,7 @@ Material:
     - _ToonLightingShadowSoftEdge: 0.45
     - _ToonPostEffectsGroup: 0
     - _ToonShading: 0
-    - _ToonShadingGroup: 1
+    - _ToonShadingGroup: 0
     - _ToonWhiten: 0
     - _TwoSided: 1
     - _UDIMDiscardRow0_0: 0
@@ -476,7 +476,7 @@ Material:
     - _UDIMDiscardUV: 0
     - _UVDiscardGroup: 0
     - _UVSec: 0
-    - _UtilitiesGroup: 1
+    - _UtilitiesGroup: 0
     - _UtilityFunction: 0
     - _UtilityInvert: 0
     - _UtilityMaskThreshold: 0.01

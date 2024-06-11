@@ -11684,7 +11684,7 @@ Cloth:
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0
   m_WorldAccelerationScale: 0
-  m_Friction: 1
+  m_Friction: 0
   m_CollisionMassScale: 0
   m_UseContinuousCollision: 0
   m_UseVirtualParticles: 0
