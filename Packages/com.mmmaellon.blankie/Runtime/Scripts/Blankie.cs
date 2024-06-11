@@ -13,6 +13,7 @@ namespace MMMaellon.Blankie
         public SkinnedMeshRenderer mesh;
         public BlankiePoint[] points;
         public float simSpeed = 0.2f;
+        public float stiffness = 0.5f;
         public float neighborDistance = 0.9f;
 
         [UdonSynced(UdonSyncMode.None)]
@@ -69,7 +70,11 @@ namespace MMMaellon.Blankie
             movedPoint = false;
             foreach (var point in points)
             {
-                movedPoint = point.Unstretch(simSpeed) || movedPoint;
+                if (point.sync.IsHeld)
+                {
+                    continue;
+                }
+                movedPoint = point.Unstretch(simSpeed, stiffness) || movedPoint;
             }
             if (movedPoint || heldCount > 0)
             {
@@ -77,30 +82,48 @@ namespace MMMaellon.Blankie
             }
         }
 
+        [Header("** Make Sure You Know What You're Doing**")]
+        public bool reconfigureBlankie = false;
 #if !COMPILER_UDONSHARP && UNITY_EDITOR
-        [MenuItem("MMMaellon/Blankie Setup")]
-        public static void Setup()
+        // [MenuItem("MMMaellon/Blankie Setup")]
+        // public static void Setup()
+        // {
+        //     var blankies = GameObject.FindObjectsByType<Blankie>(FindObjectsSortMode.None);
+        //     foreach (var blankie in blankies)
+        //     {
+        //         blankie.SetupBlankie();
+        //     }
+        // }
+
+        public void SetupBlankie()
         {
-            var blankies = GameObject.FindObjectsByType<Blankie>(FindObjectsSortMode.None);
-            foreach (var blankie in blankies)
+            foreach (var point in points)
             {
-                foreach (var point in blankie.points)
+                List<Transform> closeEnoughNeighbors = new List<Transform>();
+                foreach (var neighbor in points)
                 {
-                    List<Transform> closeEnoughNeighbors = new List<Transform>();
-                    foreach (var neighbor in blankie.points)
+                    if (neighbor == point)
                     {
-                        if (neighbor == point)
-                        {
-                            continue;
-                        }
-                        if (Vector3.Distance(neighbor.transform.position, point.transform.position) < blankie.neighborDistance)
-                        {
-                            closeEnoughNeighbors.Add(neighbor.transform);
-                        }
+                        continue;
                     }
-                    point.neighbors = closeEnoughNeighbors.ToArray();
-                    point.sync = point.GetComponent<LightSync.LightSync>();
+                    if (Vector3.Distance(neighbor.transform.position, point.transform.position) < neighborDistance)
+                    {
+                        closeEnoughNeighbors.Add(neighbor.transform);
+                    }
                 }
+                point.neighbors = closeEnoughNeighbors.ToArray();
+                point.RecordNeighborOffsets();
+                point.sync = point.GetComponent<LightSync.LightSync>();
+            }
+        }
+
+        public void OnValidate()
+        {
+
+            if (reconfigureBlankie)
+            {
+                reconfigureBlankie = false;
+                SetupBlankie();
             }
         }
 #endif

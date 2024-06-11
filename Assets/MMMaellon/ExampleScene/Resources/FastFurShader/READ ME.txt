@@ -1,0 +1,204 @@
+Warren's Fast Fur Shader - V4.1.1
+
+
+Latest Version:  https://warrenwolfy.gumroad.com/l/atntv
+
+Discord Server:  https://discord.gg/3nXnvU8cSs
+
+Wiki Documentation: https://wiki.warrenwolfy.ca/index.php
+
+YouTube Guides:  https://www.youtube.com/playlist?list=PL8Q88ddwwfxr2K5D1MJnAc5Kx1fujQ7hY
+
+Patreon: https://www.patreon.com/Warren711
+
+
+
+Known Limitations
+
+    This shader does NOT work on Apple M1 and M2 chipsets! These chips do not have 'geometry' shaders, which is a core component of my shader.
+
+
+
+Preamble
+
+	This shader is a passion project. I had no knowledge of either Unity or shader code when I started making it, so please contact me on the Discord server if (when) you encounter any bugs.
+	
+	I will work with you to fix the bugs! My goal is to let everyone have fur that looks great and doesn't crash frame-rates.
+
+
+
+Installation
+
+	Installing the Unity package will create a "FastFurShader" folder in your project's "Assets" folder. There are no other dependencies.
+
+	Once installed, the shader will be listed as "Warren's Fast Fur" -> "Fast Fur" when choosing a shader.
+
+	(NOTE: There may still be a rare bug that sometimes causes a compiler error. If the shader isn't listed, go to the "Project" -> "Assets" folder, then right-click on the "FastFurShader" folder and select "Reimport". If this happens, please let me know, as I really want to know if this bug is 100% fixed or not.)
+
+
+
+Set-up
+
+	Put your avatar's main colour map into the "Albedo Map" texture slot.
+
+	Fast Fur needs at least 2 custom data textures in order to work. The utilities required to make them are included with the shader:
+
+
+	"Fur Shape Map"
+
+		Contains fur height, combing, and hair density information.
+
+		Click the big "Click here to generate a blank fur shape data map" button, and a blank map will be created for your avatar (the file will be created in the "FastFurShader" directory, but can be moved anywhere).
+
+		Your new fur coat will have an even height of 70% all over, no combing, and uniform hair density.
+
+		You can edit this later using the "Fur Grooming" utility.
+
+
+	"Hair Pattern Map (Fine)"
+
+		Contains a randomly generated pattern of individual hair follicles. The "Hair Pattern Map (Coarse)" map is optional, but highly recommended since it makes the hairs more visible further away.
+
+		Click the big "Click here to generate a hair map" button to create the maps (the files will be created in the "FastFurShader" directory, but can be moved anywhere).
+
+
+
+	Once the default textures have been created, I recommend playing with the various sliders to get a sense of what they do. Most should be self-explanatory just by adjusting the slider and seeing what happens, but to clarify some:
+
+	"PBS Skin Material" - Renders the skin using 'Physically Based Shading', which allows for advanced lighting effects such as specular lighting and glossy or metallic surfaces. The depth of the fur and the position of the slider determines how visible the PBS skin effects are.
+
+	"MatCap" - Material Capture is a way of simulating world reflections and other lighting effects. To be honest, I have very little experience with MatCap, and my implementation is based on what I was able to research online. If you are familiar with MatCap and find that my implementation is missing some critical feature you need, or is glitchy, please contact me on the Discord server and I will work to fix it right away!
+
+	"Combing Strength" - This won't do anything until you've groomed your fur. Once you've groomed it, this will set the overall strength of the combing.
+
+	"Body Shrink Offset" - The base body will be moved inwards, proportional to thickness of the fur. This allows a fur-covered avatar to have a similar sillouette compared to when it is using another shader.
+
+	"Body Expansion when Far" - The base body will expand as the distance increases. This improves render quality, since lower fur layers will also be moved outwards. However, this expansion can cause gaps on some avatars, so this feature is optional.
+
+	"Height Masks" - These 2 textures contain up to 8 additional height masks. Each channel can be independantly enabled as-needed to limit the height of the fur (for example, to hide fur that is beneath clothing).
+
+	"Fur Grooming: Copy Map" - Only used during Fur Grooming. This can be used as a source to copy from, or as a way to lock the skin/fur while using the Fur Grooming.
+	
+	"Hair Highlights" / "Hair Colour Shift" - These use the per-hair data stored in the "Hair Pattern Map" to determine the colouring offsets of each individual hair. Besides looking nice, this feature is what makes hairs visible, otherwise they simply all blend together.
+
+	"Hair Clipping" - The shader automatically calibrates itself so that the tips of the tallest hairs extend to the highest rendered shell. However, you may use "Hair Clipping" to lengthen your hairs even further. Everything that extends beyond the top rendering shell will then be clipped off.
+
+	"Hair Pattern Map Generator" - This generates random hair maps, allowing you to fine-tune the density, length variability, colouring, highlights, etc..., of individual hairs.
+
+	"Hair Stiffness" controls how flexible or stiff the hairs are: flexible hairs bend along their entire length, while stiff hairs bend at their root.
+
+	"Fur Markings" (Optional) Contains a tiled fur texture (ie. spots, stripes, etc...) You can use an actual image of animal fur, or the shader can generate a random fur pattern for you.	NOTE: even if you do not want visible markings, the "Fur Markings Height" slider can be used to give your fur a textured appearance, which increases the fur's visibility.
+
+	"Fur Markings Generator" - This generator is based on Alan Turing's "The Chemical Basis of Morphogenesis" algorithm. The basic theory is that each pigmented cell gives off activator hormones and inhibitor hormones. Activator hormones affect nearby cells, while inhibitor hormones affect cells further away. If the strength of all activator hormones acting on a cell is stronger than all the inhibitor hormones, that cell will become pigmented, otherwise it will be un-pigmented. Note that this generator is currently a simplification of Turing's model, and is not capable of producing many complex fur patterns (ex. leopard spots).
+
+	"Light Wraparound" - When an "Important" light (as determined by the world's creator) hits the fur at a sharp angle, this will cause the tips of the fur to catch the light. For the Lite version of the Fast Fur shader, only 1 "Directional" light is supported. This does not work for any background, or "Not Important" lights.
+
+	"Subsurface Scattering" - When an "Important" light is behind the avatar, this causes edge fur to glow as some of the light to passes through the fur. Note that the amount of glow is an approximation, and isn't physically accurate (which would require much more complex, and thus much slower calculations).
+
+	"Deep Hair Occlusion Strength" - How much darker hair / skin gets the deeper into the fur it is. Note that the shader gradually fades this in as you get closer. It is not visible when far away.
+
+	"Light Penetration Depth" - Reduces the effect of "Deep Hair Occlusion Strength" by having light ignore some of the depth. Very useful to eliminate subtle shadowing for avatars with peach-fuzz facial fur.
+
+
+
+Toon Shading
+
+	This is an optional feature which applies a type of simulated 2D cell-shading. When enabled, the shader will limit itself to using only 9 possible colours. The colours are adjustable, and the shader will choose whichever colour is closest.
+	
+	Some post-processing effects can then be applied: "Re-mix Hue" will shift the RGB channels to other channels. "Toon Brightness Adjust" will make everything brighter or darker. "Toon Whitening" mixes in some white pigment.
+
+	"Toon lighting" will reduce the lighting down to 3 intensity levels. The thresholds between the 3 levels are adjustable, and the sharpness of the transitions are adjustable.
+
+
+
+Fur Grooming
+
+	In the "FastFurShader" folder is a prefab labelled "Fur Grooming (Drag this into your scene)". Drag it into your project heirarchy, wherever you like.
+
+	Press "Play" (or type CTRL-P).
+
+	Hopefully, you will see your avatar (the Fur Grooming utility uses your main camera, so that needs to have been set up facing your avatar), along with the grooming control panel. If you see an error message instead, you will need to correct the error condition first. If you cannot figure out what the error message means, contact me on the Discord server and I will try to help.
+
+	Controlling the camera can be done by holding the right-mouse button. While holding the right-mouse button, WASD can be used to move left-right and forward-back, and QE can be used to move up-down. The speed of the camera movement can be adjusted using the mouse scroll-wheel.
+
+	To choose which "Fast Fur" material you'd like to groom, use the drop-down menu on the right side of the game display. This menu will be disabled if you have un-saved changes on the material you are currently grooming.
+	
+	You should be able to hover over the material that you have selected and see a glowing cursor appear on the Fast Fur material. If not, try clicking on your avatar. If there is still no cursor, please contact me on the Discord server and I will try to help.
+
+ 
+	The sliders on the left of the control panel adjust the size, strength, falloff (strong in centre, weaker on the edges), and visibility of the grooming cursor.
+
+	The sliders, buttons, and check-boxes on the right of the control panel are used to set the various grooming options. The check-boxes enable/disable each type of grooming, and the sliders set the amount.
+
+	Clicking the middle-mouse-button will sample the length, density, and combing of the fur at the point under your mouse cursor, and set the sliders accordingly.
+
+	"Spherical" changes between a 3D spherical cursor, or a 2D circular cursor. A 3D spherical cursor is usually best for large-scale grooming, while the 2D circular cursor is often easier for grooming finer details. Note that the 2D circular cursor considers geometric "hard-edges" as separate surfaces. This is NOT intentional, but I honestly do not know how to fix this yet.
+
+	"Length" is the relative length of the hairs. Note that the shader squeezes rendering shells closer together when fur is shorter. THIS IS ONLY CALCULATED PER VERTEX, meaning sometimes nearby fur will seem to shrink or disappear when you are trying to add fine details. If so, you need to raise the height of nearby fur, where the vertices are.
+
+	"Density" can be used to make patches of hairs finer or coarser. Note that it only does so in discrete steps, and that every change of density will create a slight seam in the hair pattern.
+
+	"Combing" combs the fur in the direction the 3D cursor moves. The strength of the combing determines the maximum that the hair will bend in a given direction.
+
+
+	If you assign a "Fur Grooming: Copy Map" to the material you are grooming, you can then use that other map to lock either the skin or the fur, or you can copy from it using the "Copy Map" brush.
+
+	
+	Note that due to the mathematics and texture resolutions involved, you will never be able to get the combing perfect. Longer hairs are affected more by these resolution errors, and no matter how hard you try they will always go "wonky" if combed too far.
+
+	Sometimes heavy combing that crosses a "hard-edge" in the avatar's geometry will result in a line of black, or wrong-coloured hairs. The glitch happens because combing shifts where samples are taken from your avatar's albedo texture. If a pixel sample is moved too far, it may take a sample from somewhere that is blank, resulting in black fur. Adding more "padding" pixels to your albedo texture (generated by Blender, Substance Painter, etc...) will reduce these "hard-edge" glitches, but if that doesn't help you can turn on the "Aggressively Hide UV Seams" feature, found in the "Main Render Settings" section. This will prevent the albedo texture from being shifted, eliminating the seams, but also causing the individual hair colours to be inconsistent.
+
+
+
+
+Shader Variants
+
+	"Fast Fur" (standard version)
+		- Max 32 fur rendering shells
+		- Supports all lights
+		- Full shadows
+
+
+	"Fast Fur - Lite"
+		- Max 16 fur rendering shells
+		- Only 1 "Important" light supported (which must be "Directional", not "Spot" or "Point"), all other lighting will be approximated.
+		- Casts shadows, but does not receive them
+		- Faster than the standard Fast Fur shader
+		- Free!
+
+
+	"Fast Fur - Skin-Only" and "Fast Fur - Skin-Only Lite" 
+		- No fur, only the skin is rendered
+		- Extremely fast
+		- Intended for matching the Fast Fur lighting on meshes without fur
+
+
+	"Fast Fur - Soft UltraLite"
+		- Heaviliy stripped-down variant of the Lite shader
+		- Supports true transparency
+		- Faster than the standard or Lite variants
+		- Works on Apple M1/M2 devices
+		- Free!
+
+
+
+
+
+Helper Shaders
+
+	"Render Nothing"
+		- Aborts the render pipeline as quickly as possible.
+		- Useful to hide materials, such as clothes, but is faster than a shader that is using transparency.
+
+	"Scaling"
+		- A standard Unity surface shader that can re-scale the mesh.
+		- Useful for short-haired avatars, to make clothing a little bit bigger so that it covers the fur. Unfortunately, it doesn't work with some clothing due to geometric hard-edges.
+
+
+
+Final Notes
+
+	Be aware that this shader has been ruthlessly built for speed. I've made countless compromises on accuracy and/or realism for the sake of FPS. Some glitches and limitations are directly because of these speed optimizations. Others are my fault (sorry).
+
+	There are still some bugs and missing features with this shader, and I am continually improving it. Shader programming has been a steep (but fun!) learning curve for me, and I'm proud of the results so far. I really hope you enjoy my shader!
+

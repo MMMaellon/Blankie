@@ -1,0 +1,32 @@
+Warren's Fast Fur Shader - License Terms
+
+
+
+NOT PERMITTED:
+
+	You must NOT re-sell, re-package, or re-distribute THE SOURCE CODE of the shader. The only authorized download source is the Gumroad page (or the Discord server for Beta versions).
+
+	You must NOT use any variant of the experimental "Super Pipeline" version of the shader publicly. This version is still under development and is NOT compatible with all video cards.
+
+
+
+PERMITTED:
+
+	You are free to use the shader for personal use.
+
+	You are free to use the shader for content creation (ex. Twitch, YouTube, TikTok, etc...), both personal and commercial. Credit is appreciated, but not required!
+
+	You may distribute, or sell, your own pre-configured textures, materials, and/or assets that are designed to work with the shader. End-users should then be direction to the Gumroad page to download the shader themselves.
+
+	You may use the shader on any PRE-COMPILED in-game assets, such as public avatars or public worlds, provided it does not include the source code, for both personal and commercial uses. Credit is appreciated, but not required!
+
+	You may use the shader in a PRE-COMPILED, stand-alone commercial product, such as a Unity game. If so, then credit IS REQUIRED. Also, be aware that the shader is only designed specifically for Unity BiRP Forward rendering, and is currently optimized for VR Chat use.
+
+
+
+PLEASE BE COURTEOUS!
+
+	I've tried to make this shader as fast as possible, but please remember it's still a fur shader! Complex geometry, overlapping layers, and excessively large/thick fur can cause lag, so please be aware of this when using it publicly!
+
+	Please try to use higher-performance settings (less layers, faster quality settings), or preferably the 'Lite' version, on any publicly shared avatars or in-game assets.
+

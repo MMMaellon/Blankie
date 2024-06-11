@@ -1,5 +1,4 @@
 ﻿
-using MMMaellon.LightSync;
 using UdonSharp;
 using UnityEngine;
 
@@ -8,11 +7,16 @@ namespace MMMaellon.Blankie
     [RequireComponent(typeof(LightSync.LightSync))]
     public class BlankiePoint : UdonSharpBehaviour
     {
+        [Header("All these settings should be set with the 'Reconfigure Blankie' button on the parent blankie")]
         public LightSync.LightSync sync;
         public Transform[] neighbors;
         public Vector3[] neighborOffsets;
         public Transform parent;
         public void Start()
+        {
+        }
+
+        public void RecordNeighborOffsets()
         {
             neighborOffsets = new Vector3[neighbors.Length];
 
@@ -28,9 +32,10 @@ namespace MMMaellon.Blankie
         }
 
         Vector3 optimalPosition;
-        Vector3 currentOptimalPosition;
+        Vector3 toNeighbor;
         int stretchedNeighbors = 0;
-        public bool Unstretch(float amount)
+        float difference;
+        public bool Unstretch(float amount, float stiffness)
         {
             if (neighbors.Length == 0)
             {
@@ -40,17 +45,21 @@ namespace MMMaellon.Blankie
             stretchedNeighbors = 0;
             for (int i = 0; i < neighbors.Length; i++)
             {
-                currentOptimalPosition = transform.position - neighbors[i].position;
-
-                if (currentOptimalPosition.magnitude < neighborOffsets[i].magnitude)
+                toNeighbor = neighbors[i].position - transform.position;
+                difference = toNeighbor.magnitude - neighborOffsets[i].magnitude;
+                if (difference < 0)
                 {
+                    if (stiffness <= 0)
+                    {
+                        continue;
+                    }
+                    stretchedNeighbors++;
+                    optimalPosition += transform.position + toNeighbor.normalized * difference * stiffness;
                     continue;
                 }
 
                 stretchedNeighbors++;
-                currentOptimalPosition = neighbors[i].position + currentOptimalPosition.normalized * neighborOffsets[i].magnitude;
-
-                optimalPosition += currentOptimalPosition;
+                optimalPosition += transform.position + toNeighbor.normalized * difference;
             }
 
             if (stretchedNeighbors == 0)

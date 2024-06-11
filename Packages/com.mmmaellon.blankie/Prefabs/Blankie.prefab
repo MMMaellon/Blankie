@@ -379,7 +379,10 @@ MonoBehaviour:
   - {fileID: 5487437666996574866}
   - {fileID: 8800498053565435492}
   - {fileID: 8124039546531232449}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.754899, y: 0, z: 0}
+  - {x: 0.76644444, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &2604891922902581759
 MonoBehaviour:
@@ -704,7 +707,10 @@ MonoBehaviour:
   - {fileID: 5123734981569961802}
   - {fileID: 3548472311447941152}
   - {fileID: 2885964554131128607}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7036081, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.7872972, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &2478906474846177731
 MonoBehaviour:
@@ -978,7 +984,11 @@ MonoBehaviour:
   - {fileID: 5487437666996574866}
   - {fileID: 8124039546531232449}
   - {fileID: 6828833273671322092}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7872972, y: 0, z: 0}
+  - {x: -0.76644444, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &8445162089345279979
 MonoBehaviour:
@@ -1541,7 +1551,10 @@ MonoBehaviour:
   - {fileID: 5123734981569961802}
   - {fileID: 515035957261781739}
   - {fileID: 3548472311447941152}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.7036081, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &9000985613662440031
 MonoBehaviour:
@@ -2769,7 +2782,10 @@ MonoBehaviour:
   - {fileID: 3593961760462527039}
   - {fileID: 3994446802340256928}
   - {fileID: 5355695304489586807}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7872972, y: 0, z: 0}
+  - {x: -0.76644444, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &7487218256593862910
 MonoBehaviour:
@@ -4167,7 +4183,10 @@ MonoBehaviour:
   - {fileID: 3114855962400564179}
   - {fileID: 8841629196992370403}
   - {fileID: 6338892922281417863}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7872972, y: 0, z: 0}
+  - {x: -0.76644444, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4105139723549487827
 MonoBehaviour:
@@ -4844,7 +4863,11 @@ MonoBehaviour:
   - {fileID: 8411925496763831852}
   - {fileID: 6591525774090086167}
   - {fileID: 5355695304489586807}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.754899, y: 0, z: 0}
+  - {x: 0.76644444, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &8755387937830034815
 MonoBehaviour:
@@ -5072,8 +5095,10 @@ MonoBehaviour:
   - {fileID: 7612013666784214478}
   - {fileID: 1622313601049519749}
   simSpeed: 1
+  stiffness: 0.5
   neighborDistance: 0.862
   useGravity: 0
+  reconfigureBlankie: 0
 --- !u!114 &746670552669790417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5801,7 +5826,10 @@ MonoBehaviour:
   - {fileID: 7853041472344403378}
   - {fileID: 3432307022851940461}
   - {fileID: 4023658534341207297}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.754899, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4317346049176102352
 MonoBehaviour:
@@ -6075,7 +6103,11 @@ MonoBehaviour:
   - {fileID: 8411925496763831852}
   - {fileID: 5355695304489586807}
   - {fileID: 6338892922281417863}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7872972, y: 0, z: 0}
+  - {x: -0.76644444, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4926802669234857516
 MonoBehaviour:
@@ -6773,7 +6805,9 @@ MonoBehaviour:
   neighbors:
   - {fileID: 493195029809946574}
   - {fileID: 3114855962400564179}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.7036081, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &8032482715244040463
 MonoBehaviour:
@@ -7234,7 +7268,11 @@ MonoBehaviour:
   - {fileID: 3593961760462527039}
   - {fileID: 1862948994934762399}
   - {fileID: 5355695304489586807}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7036081, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7872972, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &305363066499071223
 MonoBehaviour:
@@ -7588,7 +7626,9 @@ MonoBehaviour:
   neighbors:
   - {fileID: 3994446802340256928}
   - {fileID: 6591525774090086167}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.754899, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &358437698454024051
 MonoBehaviour:
@@ -7944,7 +7984,11 @@ MonoBehaviour:
   - {fileID: 2287000398046327200}
   - {fileID: 3548472311447941152}
   - {fileID: 6828833273671322092}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7036081, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7872972, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4541750384946892212
 MonoBehaviour:
@@ -8725,7 +8769,10 @@ MonoBehaviour:
   - {fileID: 9217819245060579211}
   - {fileID: 493195029809946574}
   - {fileID: 1862948994934762399}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7036081, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &5654391957368312185
 MonoBehaviour:
@@ -9049,7 +9096,9 @@ MonoBehaviour:
   neighbors:
   - {fileID: 9217819245060579211}
   - {fileID: 3593961760462527039}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7036081, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &6058294031558545789
 MonoBehaviour:
@@ -9456,7 +9505,10 @@ MonoBehaviour:
   - {fileID: 5570757232696255689}
   - {fileID: 2287000398046327200}
   - {fileID: 8124039546531232449}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7036081, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7872972, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4798188083653542576
 MonoBehaviour:
@@ -9781,7 +9833,10 @@ MonoBehaviour:
   - {fileID: 8411925496763831852}
   - {fileID: 6591525774090086167}
   - {fileID: 4360378824328851150}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.754899, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &1986049582277163273
 MonoBehaviour:
@@ -10055,7 +10110,11 @@ MonoBehaviour:
   - {fileID: 3114855962400564179}
   - {fileID: 1862948994934762399}
   - {fileID: 6338892922281417863}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7036081, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.7872972, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &7090097928129424904
 MonoBehaviour:
@@ -10680,7 +10739,11 @@ MonoBehaviour:
   - {fileID: 8411925496763831852}
   - {fileID: 4360378824328851150}
   - {fileID: 6338892922281417863}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.754899, y: 0, z: 0}
+  - {x: 0.76644444, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &5184867028922911577
 MonoBehaviour:
@@ -11191,7 +11254,10 @@ MonoBehaviour:
   - {fileID: 7853041472344403378}
   - {fileID: 3432307022851940461}
   - {fileID: 2885964554131128607}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: -0.754899, y: 0, z: 0}
+  - {x: 0.76644444, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &1630162877227989363
 MonoBehaviour:
@@ -11613,7 +11679,7 @@ Cloth:
   m_BendingStiffness: 1
   m_UseTethers: 0
   m_UseGravity: 0
-  m_Damping: 1
+  m_Damping: 0.5
   m_ExternalAcceleration: {x: 0, y: 0, z: 0}
   m_RandomAcceleration: {x: 0, y: 0, z: 0}
   m_WorldVelocityScale: 0
@@ -20971,7 +21037,10 @@ MonoBehaviour:
   - {fileID: 5570757232696255689}
   - {fileID: 515035957261781739}
   - {fileID: 2287000398046327200}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.7036081, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &9209624475392754539
 MonoBehaviour:
@@ -21835,7 +21904,11 @@ MonoBehaviour:
   - {fileID: 7853041472344403378}
   - {fileID: 2885964554131128607}
   - {fileID: 6828833273671322092}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.7872972, y: 0, z: 0}
+  - {x: -0.76644444, y: 0, z: 0}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &4298037559960874100
 MonoBehaviour:
@@ -22326,7 +22399,10 @@ MonoBehaviour:
   - {fileID: 5487437666996574866}
   - {fileID: 8800498053565435492}
   - {fileID: 4023658534341207297}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.754899, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &6380156877058127440
 MonoBehaviour:
@@ -22598,7 +22674,9 @@ MonoBehaviour:
   neighbors:
   - {fileID: 8841629196992370403}
   - {fileID: 4360378824328851150}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0.754899, y: 0, z: 0}
+  - {x: 0, y: 0.000000059604645, z: 0.5}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &1123189319797229733
 MonoBehaviour:
@@ -23671,7 +23749,11 @@ MonoBehaviour:
   - {fileID: 7853041472344403378}
   - {fileID: 4023658534341207297}
   - {fileID: 6828833273671322092}
-  neighborOffsets: []
+  neighborOffsets:
+  - {x: 0, y: 0.000000059604645, z: 0.5}
+  - {x: 0, y: -0.000000059604645, z: -0.5}
+  - {x: -0.754899, y: 0, z: 0}
+  - {x: 0.76644444, y: 0, z: 0}
   parent: {fileID: 6726754581978383216}
 --- !u!114 &5261493770564296168
 MonoBehaviour:

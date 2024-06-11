@@ -1,0 +1,576 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: FuzzyBlankie Trim
+  m_Shader: {fileID: 4800000, guid: fece619811077234d84ddd878e3f02fe, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - FXAA
+  - _GLOSSYREFLECTIONS_OFF
+  m_InvalidKeywords:
+  - FXAA_KEEP_ALPHA
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AudioLink:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _BumpMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTexture1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTexture2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DecalTexture3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurGroomingMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurShapeMap:
+        m_Texture: {fileID: 2800000, guid: 48a23219ff487c64eb563fb5bf2fb522, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurShapeMask1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurShapeMask2:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurShapeMask3:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _FurShapeMask4:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HairMapCoarse:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MarkingsMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Matcap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MatcapMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 10305, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SpecGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UtilitySourceMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _UtilityTargetMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _ActivatorCycles: 10
+    - _ActivatorHormoneRadius: 3
+    - _AdvancedHairColour: 0
+    - _AdvancedHairColourGroup: 0
+    - _AlbedoEmission: 0
+    - _AlbedoHueShift: 0
+    - _AlbedoHueShiftCycle: 0
+    - _AlbedoHueShiftRate: 1
+    - _AnisotropicGroup: 0
+    - _AudioLinkDynamicFiltering: 5
+    - _AudioLinkDynamicSpeed: 1
+    - _AudioLinkDynamicStrength: 1
+    - _AudioLinkEnable: 0
+    - _AudioLinkGroup: 0
+    - _AudioLinkHairVibration: 0
+    - _AudioLinkStaticFiltering: 10
+    - _AudioLinkStaticMiddle: 0.25
+    - _AudioLinkStaticRoots: 0.5
+    - _AudioLinkStaticSkin: 0.5
+    - _AudioLinkStaticTips: 0
+    - _AudioLinkStrength: 1
+    - _BodyExpansion: 0
+    - _BodyResizeCutoff: 0
+    - _BodyShrinkOffset: 0
+    - _BumpScale: 1
+    - _CellStretch: 0
+    - _CoarseMapActive: 0
+    - _ConfirmPipeline: 0
+    - _Contrast: 3
+    - _Cull: 0
+    - _Cutoff: 0.5
+    - _DebuggingGroup: 1
+    - _DebuggingLog: 0
+    - _Decal0Group: 0
+    - _Decal1Group: 0
+    - _Decal2Group: 0
+    - _Decal3Group: 0
+    - _DecalAlbedoStrength: 1
+    - _DecalAlbedoStrength1: 1
+    - _DecalAlbedoStrength2: 1
+    - _DecalAlbedoStrength3: 1
+    - _DecalAudioLinkEnable0: 0
+    - _DecalAudioLinkEnable1: 0
+    - _DecalAudioLinkEnable2: 0
+    - _DecalAudioLinkEnable3: 0
+    - _DecalAudioLinkLayers0: 2
+    - _DecalAudioLinkLayers1: 2
+    - _DecalAudioLinkLayers2: 2
+    - _DecalAudioLinkLayers3: 2
+    - _DecalEmissionStrength: 0
+    - _DecalEmissionStrength1: 0
+    - _DecalEmissionStrength2: 0
+    - _DecalEmissionStrength3: 0
+    - _DecalEnable: 0
+    - _DecalEnable1: 0
+    - _DecalEnable2: 0
+    - _DecalEnable3: 0
+    - _DecalGroup: 0
+    - _DecalHueShift0: 0
+    - _DecalHueShift1: 0
+    - _DecalHueShift2: 0
+    - _DecalHueShift3: 0
+    - _DecalHueShiftCycle0: 0
+    - _DecalHueShiftCycle1: 0
+    - _DecalHueShiftCycle2: 0
+    - _DecalHueShiftCycle3: 0
+    - _DecalHueShiftRate0: 1
+    - _DecalHueShiftRate1: 1
+    - _DecalHueShiftRate2: 1
+    - _DecalHueShiftRate3: 1
+    - _DecalLumaGlowGradient0: 0
+    - _DecalLumaGlowGradient1: 0
+    - _DecalLumaGlowGradient2: 0
+    - _DecalLumaGlowGradient3: 0
+    - _DecalLumaGlowZone0: 0
+    - _DecalLumaGlowZone1: 0
+    - _DecalLumaGlowZone2: 0
+    - _DecalLumaGlowZone3: 0
+    - _DecalRotation: 0
+    - _DecalRotation1: 0
+    - _DecalRotation2: 0
+    - _DecalRotation3: 0
+    - _DecalScale: 1
+    - _DecalScale1: 1
+    - _DecalScale2: 1
+    - _DecalScale3: 1
+    - _DecalTiled: 0
+    - _DecalTiled1: 0
+    - _DecalTiled2: 0
+    - _DecalTiled3: 0
+    - _DeepFurOcclusionStrength: 0.35
+    - _DetailNormalMapScale: 1
+    - _Direction: 0
+    - _DstBlend: 0
+    - _DynamicsGroup: 0
+    - _EmissionHueShift: 0
+    - _EmissionHueShiftCycle: 0
+    - _EmissionHueShiftRate: 1
+    - _EmissionMapAudioLinkEnable: 0
+    - _EmissionMapAudioLinkLayers: 0
+    - _EmissionMapLumaGlowGradient: 0
+    - _EmissionMapLumaGlowZone: 0
+    - _EmissionMapStrength: 1
+    - _EnableUDIMDiscardOptions: 0
+    - _EnableWind: 0
+    - _Error0: 0
+    - _Error1: 0
+    - _Error2: 0
+    - _Error3: 0
+    - _Error4: 0
+    - _Error5: 0
+    - _Error6: 0
+    - _Error7: 0
+    - _ExtraLighting: 0.1
+    - _ExtraLightingEnable: 1
+    - _ExtraLightingGroup: 0
+    - _ExtraLightingMode: 0
+    - _ExtraLightingRim: 1
+    - _FallbackLightAngle: -25
+    - _FallbackLightDirection: 45
+    - _FallbackLightEnable: 0
+    - _FallbackLightStrength: 0.25
+    - _FurAnisoDepth: 0.5
+    - _FurAnisoFlat: 0
+    - _FurAnisoReflectAngle: 1
+    - _FurAnisoReflectEmission: 0
+    - _FurAnisoReflectGloss: 0.5
+    - _FurAnisoReflectIridescenceStrength: 10
+    - _FurAnisoReflectMetallic: 0.5
+    - _FurAnisoRefractAngle: 6
+    - _FurAnisoRefractEmission: 0
+    - _FurAnisoRefractGloss: 0.5
+    - _FurAnisoRefractMetallic: 1
+    - _FurAnisoSkin: 0
+    - _FurAnisotropicEnable: 0
+    - _FurAnisotropicReflect: 0.5
+    - _FurAnisotropicRefract: 0.5
+    - _FurCombStrength: 0
+    - _FurDebugCombing: 0
+    - _FurDebugContact: 0
+    - _FurDebugDensity: 0
+    - _FurDebugDepth: 0
+    - _FurDebugDistance: 0
+    - _FurDebugHairMap: 0
+    - _FurDebugLength: 0
+    - _FurDebugMipMap: 0
+    - _FurDebugQuality: 0
+    - _FurDebugStereo: 0
+    - _FurDebugTopLayer: 0
+    - _FurDebugUpperLimit: 0
+    - _FurDebugVerticies: 0
+    - _FurGravitySlider: 0
+    - _FurLightingGroup: 1
+    - _FurMarkingsActive: 0
+    - _FurMinHeight: 0.01
+    - _FurShadowCastSize: 0.35
+    - _FurShapeGroup: 1
+    - _FurShapeMask1Bits: 0
+    - _FurShapeMask2Bits: 0
+    - _FurShapeMask3Bits: 0
+    - _FurShapeMask4Bits: 0
+    - _FurShellSpacing: 0.5
+    - _FurTouchRange: 3.5
+    - _FurTouchStrength: 0
+    - _FurTouchThreshold: 0.15
+    - _FurWindShimmer: 0.25
+    - _GenFineHairMaxColourShift: 1
+    - _GenFineHairMaxHeight: 1
+    - _GenFineHairMaxHighlight: 1
+    - _GenFineHairMaxOverlap: 0
+    - _GenFineHairMinColourShift: -1
+    - _GenFineHairMinHeight: 0.7
+    - _GenFineHairMinHighlight: -1
+    - _GenFineHairs: 5000
+    - _GenFineHairsTaper: 0
+    - _GenGuardHairMaxColourShift: 1
+    - _GenGuardHairMaxHeight: 1
+    - _GenGuardHairMaxHighlight: 1
+    - _GenGuardHairMaxOverlap: 0
+    - _GenGuardHairMinColourShift: -1
+    - _GenGuardHairMinHeight: 0.7
+    - _GenGuardHairMinHighlight: -1
+    - _GenGuardHairs: 150
+    - _GenGuardHairsTaper: 1
+    - _GenMediumHairMaxColourShift: 1
+    - _GenMediumHairMaxHeight: 1
+    - _GenMediumHairMaxHighlight: 1
+    - _GenMediumHairMaxOverlap: 0
+    - _GenMediumHairMinColourShift: -1
+    - _GenMediumHairMinHeight: 0.7
+    - _GenMediumHairMinHighlight: -1
+    - _GenMediumHairs: 250
+    - _GenMediumHairsTaper: 0
+    - _GenerateFurGroup: 0
+    - _GenerateHairGroup: 0
+    - _GlossMapScale: 0.092
+    - _Glossiness: 1
+    - _GlossyReflections: 0
+    - _HairBlur: 0
+    - _HairClipping: 2
+    - _HairColourMinHeight: 0
+    - _HairColourShift: 0
+    - _HairCurlXTwists: 3
+    - _HairCurlXWidth: 0.5
+    - _HairCurlXYOffset: 45
+    - _HairCurlYTwists: 3
+    - _HairCurlYWidth: 0.5
+    - _HairCurls: 0
+    - _HairCurlsActive: 0
+    - _HairCurlsGroup: 0
+    - _HairCurlsLockXY: 1
+    - _HairDensity: 0.1
+    - _HairDensityThreshold: -1
+    - _HairHighlights: 0
+    - _HairMapAlphaFilter: 1
+    - _HairMapCoarseAlphaFilter: 0
+    - _HairMapCoarseMipFilter: 1
+    - _HairMapCoarseStrength: 1
+    - _HairMapHash: 0
+    - _HairMapMipFilter: 0
+    - _HairMidAlbedo: 1
+    - _HairMidHighPoint: 0.75
+    - _HairMidLowPoint: 0.6
+    - _HairMidMarkings: 1
+    - _HairMipType: 0
+    - _HairRenderingGroup: 0
+    - _HairRootAlbedo: 1
+    - _HairRootMarkings: 1
+    - _HairRootPoint: 0.5
+    - _HairSharpen: 0
+    - _HairStiffness: 0
+    - _HairTipAlbedo: 1
+    - _HairTipMarkings: 1
+    - _HairTipPoint: 0.85
+    - _HairTransparency: 0
+    - _HairsColourGroup: 1
+    - _HairsGroup: 1
+    - _HideSeams: 0
+    - _InhibitorHormoneAdditionalRadius: 3
+    - _InhibitorStrength: 0.3
+    - _InitialDensity: 0.5
+    - _LightPenetrationDepth: 0.1
+    - _LightWraparound: 7.5
+    - _LightingGroup: 1
+    - _MainMapsGroup: 1
+    - _MarkingsContrast: 1
+    - _MarkingsDensity: 3.85
+    - _MarkingsGroup: 0
+    - _MarkingsHeight: 0.15
+    - _MarkingsMapHash: 0
+    - _MarkingsMapNegativeCutoff: 0
+    - _MarkingsMapPositiveCutoff: 0
+    - _MarkingsRotation: 0
+    - _MarkingsVisibility: 0.3
+    - _MatcapAdd: 0
+    - _MatcapEmission: 0
+    - _MatcapEnable: 0
+    - _MatcapFurMask: 0
+    - _MatcapGroup: 0
+    - _MatcapReplace: 0
+    - _MatcapSpecular: 1
+    - _MatcapTextureChannel: 0
+    - _MaxBrightness: 10
+    - _MaximumLayers: 1
+    - _Metallic: 0.087
+    - _MinBrightness: -1
+    - _MirrorShowHide: 0
+    - _Mode: 0
+    - _MovementGroup: 0
+    - _MovementStrength: 1
+    - _MutationRate: 0.25
+    - _OcclusionGroup: 1
+    - _OcclusionStrength: 0
+    - _OverallBrightness: 1
+    - _OverrideDistanceBias: 0
+    - _OverrideQualityBias: 0
+    - _OverrideScale: 0.25
+    - _PBSSkin: 0.1
+    - _PBSSkinGroup: 1
+    - _PBSSkinStrength: 0
+    - _Parallax: 0.02
+    - _ProximityOcclusion: 0.5
+    - _ProximityOcclusionRange: 0.2
+    - _QualityGroup: 0
+    - _RenderPipeline: 1
+    - _ScaleCalibration: 0.10000002
+    - _SelectedUV: 0
+    - _SmoothnessTextureChannel: 0
+    - _SoftenBrightness: 0
+    - _SoftenShadows: 0.1
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _SubsurfaceScattering: 0.5
+    - _TS1: 0
+    - _TS2: 0
+    - _TS3: 0
+    - _TiltEdges: 1
+    - _ToonBrightness: 0
+    - _ToonColoursGroup: 0
+    - _ToonHue: 0
+    - _ToonHueBGR: 0
+    - _ToonHueBRG: 0
+    - _ToonHueGBR: 0
+    - _ToonHueGRB: 0
+    - _ToonHueRBG: 0
+    - _ToonHueRGB: 1
+    - _ToonLighting: 0
+    - _ToonLightingGroup: 0
+    - _ToonLightingHighLevel: 0.7
+    - _ToonLightingHighSoftEdge: 0.175
+    - _ToonLightingShadowLevel: 0.1
+    - _ToonLightingShadowSoftEdge: 0.45
+    - _ToonPostEffectsGroup: 0
+    - _ToonShading: 0
+    - _ToonShadingGroup: 1
+    - _ToonWhiten: 0
+    - _TwoSided: 1
+    - _UDIMDiscardRow0_0: 0
+    - _UDIMDiscardRow0_1: 0
+    - _UDIMDiscardRow0_2: 0
+    - _UDIMDiscardRow0_3: 0
+    - _UDIMDiscardRow1_0: 0
+    - _UDIMDiscardRow1_1: 0
+    - _UDIMDiscardRow1_2: 0
+    - _UDIMDiscardRow1_3: 0
+    - _UDIMDiscardRow2_0: 0
+    - _UDIMDiscardRow2_1: 0
+    - _UDIMDiscardRow2_2: 0
+    - _UDIMDiscardRow2_3: 0
+    - _UDIMDiscardRow3_0: 0
+    - _UDIMDiscardRow3_1: 0
+    - _UDIMDiscardRow3_2: 0
+    - _UDIMDiscardRow3_3: 0
+    - _UDIMDiscardUV: 0
+    - _UVDiscardGroup: 0
+    - _UVSec: 0
+    - _UtilitiesGroup: 1
+    - _UtilityFunction: 0
+    - _UtilityInvert: 0
+    - _UtilityMaskThreshold: 0.01
+    - _UtilityMaskType: 0
+    - _UtilityNewResolution: 2
+    - _UtilityReScale: 0.75
+    - _UtilitySourceChannel: 0
+    - _UtilitySourceMask: 2
+    - _UtilityTargetChannel: 0
+    - _UtilityValue: 0
+    - _V4Quality2D: 0
+    - _V4Quality2DMirror: 0
+    - _V4QualityCameraPhoto: 0
+    - _V4QualityCameraView: 0
+    - _V4QualityEditor: 0
+    - _V4QualityScreenshot: 0
+    - _V4QualityStreamCamera: 0
+    - _V4QualityVR: 0
+    - _V4QualityVRMirror: 0
+    - _VelocityX: 0
+    - _VelocityY: 0
+    - _VelocityZ: 0
+    - _WindAngle: -10
+    - _WindDirection: 90
+    - _WindGroup: 0
+    - _WindGustsStrength: 2.5
+    - _WindSpeed: 0.35
+    - _WindTurbulenceStrength: 1.7
+    - _WorldLightGroup: 1
+    - _WorldLightReColourStrength: 0
+    - _ZWrite: 1
+    m_Colors:
+    - _BackfaceColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BackfaceEmission: {r: 0, g: 0, b: 0, a: 1}
+    - _BaseColour: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.11320752, g: 0.09692059, b: 0.080633655, a: 1}
+    - _Colour: {r: -1, g: -1, b: -1, a: -1}
+    - _DecalAudioLinkBassColor0: {r: 0, g: 0, b: 1, a: 1}
+    - _DecalAudioLinkBassColor1: {r: 0, g: 0, b: 1, a: 1}
+    - _DecalAudioLinkBassColor2: {r: 0, g: 0, b: 1, a: 1}
+    - _DecalAudioLinkBassColor3: {r: 0, g: 0, b: 1, a: 1}
+    - _DecalAudioLinkHighMidColor0: {r: 0, g: 1, b: 0, a: 1}
+    - _DecalAudioLinkHighMidColor1: {r: 0, g: 1, b: 0, a: 1}
+    - _DecalAudioLinkHighMidColor2: {r: 0, g: 1, b: 0, a: 1}
+    - _DecalAudioLinkHighMidColor3: {r: 0, g: 1, b: 0, a: 1}
+    - _DecalAudioLinkLowMidColor0: {r: 1, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkLowMidColor1: {r: 1, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkLowMidColor2: {r: 1, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkLowMidColor3: {r: 1, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkTrebleColor0: {r: 0, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkTrebleColor1: {r: 0, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkTrebleColor2: {r: 0, g: 0, b: 0, a: 1}
+    - _DecalAudioLinkTrebleColor3: {r: 0, g: 0, b: 0, a: 1}
+    - _DecalColor: {r: 1, g: 1, b: 1, a: 1}
+    - _DecalColor1: {r: 1, g: 1, b: 1, a: 1}
+    - _DecalColor2: {r: 1, g: 1, b: 1, a: 1}
+    - _DecalColor3: {r: 1, g: 1, b: 1, a: 1}
+    - _DecalPosition: {r: 0, g: 0, b: 0, a: 0}
+    - _DecalPosition1: {r: 0, g: 0, b: 0, a: 0}
+    - _DecalPosition2: {r: 0, g: 0, b: 0, a: 0}
+    - _DecalPosition3: {r: 0, g: 0, b: 0, a: 0}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissionColour: {r: -1, g: -1, b: -1, a: -1}
+    - _EmissionMapAudioLinkBassColor: {r: 0, g: 0, b: 1, a: 1}
+    - _EmissionMapAudioLinkHighMidColor: {r: 0, g: 1, b: 0, a: 1}
+    - _EmissionMapAudioLinkLowMidColor: {r: 1, g: 0, b: 0, a: 1}
+    - _EmissionMapAudioLinkTrebleColor: {r: 0, g: 0, b: 0, a: 1}
+    - _ExtraLightingColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FallbackLightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FurAnisotropicReflectColor: {r: 1, g: 1, b: 1, a: 1}
+    - _FurAnisotropicReflectColorNeg: {r: 1, g: 0, b: 0, a: 1}
+    - _FurAnisotropicReflectColorPos: {r: 0, g: 0, b: 1, a: 1}
+    - _FurAnisotropicRefractColor: {r: 1, g: 1, b: 1, a: 1}
+    - _HairMapScaling3: {r: 1.4, g: 1.4, b: 0, a: 0}
+    - _HairMapScaling4: {r: 1.8, g: 1.8, b: 0, a: 0}
+    - _HairMapScaling5: {r: 2.2, g: 2.2, b: 2.2, a: 0}
+    - _HairMidColour: {r: 0.8, g: 0.5, b: 0.5, a: 1}
+    - _HairRootColour: {r: 1, g: 1, b: 1, a: 1}
+    - _HairTipColour: {r: 0.5, g: 0.4, b: 0.1, a: 1}
+    - _MarkingsColour: {r: 1, g: 1, b: 1, a: 1}
+    - _MatcapColor: {r: 1, g: 1, b: 1, a: 1}
+    - _PigmentColour: {r: 0, g: 0, b: 0, a: 1}
+    - _ToonColour1: {r: 1, g: 1, b: 1, a: 1}
+    - _ToonColour2: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _ToonColour3: {r: 0, g: 0, b: 0, a: 1}
+    - _ToonColour4: {r: 1, g: 0, b: 0, a: 1}
+    - _ToonColour5: {r: 1, g: 1, b: 0, a: 1}
+    - _ToonColour6: {r: 0, g: 1, b: 0, a: 1}
+    - _ToonColour7: {r: 0, g: 1, b: 1, a: 1}
+    - _ToonColour8: {r: 0, g: 0, b: 1, a: 1}
+    - _ToonColour9: {r: 1, g: 0, b: 1, a: 1}
+    - _ToonLightingHigh: {r: 1, g: 1, b: 1, a: 1}
+    - _ToonLightingMid: {r: 0.75, g: 0.75, b: 0.75, a: 1}
+    - _ToonLightingShadow: {r: 0.05, g: 0.05, b: 0.125, a: 1}
+    - _TransitionalColour: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    - _WorldLightReColour: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
