@@ -288,13 +288,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: optimalPosition
+      Data: totalForces
     - Name: $v
       Entry: 7
       Data: 17|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: optimalPosition
+      Data: totalForces
     - Name: <UserType>k__BackingField
       Entry: 7
       Data: 18|System.RuntimeType, mscorlib
@@ -438,13 +438,13 @@ MonoBehaviour:
       Data: 
     - Name: $k
       Entry: 1
-      Data: stretchedNeighbors
+      Data: forceCount
     - Name: $v
       Entry: 7
       Data: 24|UdonSharp.Compiler.FieldDefinition, UdonSharp.Editor
     - Name: <Name>k__BackingField
       Entry: 1
-      Data: stretchedNeighbors
+      Data: forceCount
     - Name: <UserType>k__BackingField
       Entry: 7
       Data: 25|System.RuntimeType, mscorlib

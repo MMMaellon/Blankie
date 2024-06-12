@@ -31,10 +31,10 @@ namespace MMMaellon.Blankie
             return Quaternion.Inverse(parent.rotation) * (transform.position - other.transform.position);
         }
 
-        Vector3 optimalPosition;
+        Vector3 totalForces;
         Vector3 toNeighbor;
         Vector3 toCentroid;
-        int stretchedNeighbors = 0;
+        int forceCount = 0;
         float difference;
         public bool Unstretch(float simSpeed, float stiffness, float poofiness)
         {
@@ -42,48 +42,49 @@ namespace MMMaellon.Blankie
             {
                 return false;
             }
-            optimalPosition = Vector3.zero;
-            stretchedNeighbors = 0;
+            totalForces = Vector3.zero;
+            forceCount = 0;
             for (int i = 0; i < neighbors.Length; i++)
             {
                 toNeighbor = neighbors[i].transform.position - transform.position;
                 difference = toNeighbor.magnitude - neighborOffsets[i].magnitude;
                 if (difference > 0)
                 {
-                    if (stiffness > 0)
-                    {
-                        stretchedNeighbors++;
-                        optimalPosition += transform.position + toNeighbor.normalized * difference * stiffness;
-                    }
+                    //stretch forces
+                    forceCount++;
+                    totalForces += toNeighbor.normalized * difference;
                 }
-                else
+                else if (stiffness > 0)
                 {
-                    stretchedNeighbors++;
-                    optimalPosition += transform.position + toNeighbor.normalized * difference;
+                    //compression forces
+                    forceCount++;
+                    totalForces += toNeighbor.normalized * difference * stiffness;
                 }
+
                 if (poofiness > 0 && neighbors[i].neighbors.Length == 4)
                 {
+                    //poofiness forces
                     toCentroid = neighbors[i].centroid - transform.position;
                     if (toCentroid.magnitude > 0)
                     {
-                        stretchedNeighbors++;
-                        optimalPosition += transform.position - (toCentroid.normalized * (poofiness / 100f) / toCentroid.sqrMagnitude);
+                        forceCount++;
+                        totalForces -= toCentroid.normalized * (poofiness / 100f) / toCentroid.sqrMagnitude;
                     }
                 }
             }
 
-            if (stretchedNeighbors == 0)
+            if (forceCount == 0)
             {
                 return false;
             }
 
-            optimalPosition /= stretchedNeighbors;
-            if (Vector3.Distance(transform.position, optimalPosition) < 0.001f)
+            totalForces /= forceCount;
+            if (totalForces.magnitude < 0.001f)
             {
                 return false;
             }
 
-            transform.position = Vector3.Lerp(transform.position, optimalPosition, simSpeed);
+            transform.position = transform.position + totalForces * simSpeed;
             return true;
         }
 
@@ -101,15 +102,6 @@ namespace MMMaellon.Blankie
                 centroid += neighbor.transform.position;
             }
             centroid /= neighbors.Length;
-        }
-
-        public void Poof(float amount)
-        {
-            if (neighbors.Length == 0)
-            {
-                return;
-            }
-
         }
     }
 }
