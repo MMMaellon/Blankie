@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using VRC.SDKBase;
 using MMMaellon.LightSync;
 using System.Collections.Generic;
@@ -13,7 +12,8 @@ namespace MMMaellon.Blankie
         public SkinnedMeshRenderer mesh;
         public BlankiePoint[] points;
         public float simSpeed = 0.2f;
-        public float stiffness = 0.5f;
+        public float stiffness = 0.0f;
+        public float poofiness = 0.2f;
         public float neighborDistance = 0.9f;
 
         [UdonSynced(UdonSyncMode.None)]
@@ -26,16 +26,16 @@ namespace MMMaellon.Blankie
 
         public override void OnChangeState(LightSync.LightSync sync, int prevState, int currentState)
         {
-            if (prevState == LightSync.LightSync.STATE_PHYSICS)
-            {
-                heldCount++;
-            }
-
-            if (currentState == LightSync.LightSync.STATE_PHYSICS)
-            {
-                heldCount--;
-            }
-            SendCustomEventDelayedFrames(nameof(Unstretch), 2);
+            // if (prevState == LightSync.LightSync.STATE_PHYSICS)
+            // {
+            //     heldCount++;
+            // }
+            //
+            // if (currentState == LightSync.LightSync.STATE_PHYSICS)
+            // {
+            //     heldCount--;
+            // }
+            SendCustomEventDelayedFrames(nameof(UpdateLoop), 2);
         }
 
         public void Start()
@@ -59,26 +59,37 @@ namespace MMMaellon.Blankie
 
         int lastFrame = -1001;
         bool movedPoint;
-        int heldCount = 0;
-        public void Unstretch()
+        public void UpdateLoop()
         {
             if (lastFrame == Time.frameCount)
             {
                 return;
             }
             lastFrame = Time.frameCount;
+
+            if (poofiness > 0)
+            {
+                foreach (var point in points)
+                {
+                    point.CalcCentroid();
+                }
+            }
+
             movedPoint = false;
             foreach (var point in points)
             {
-                if (point.sync.IsHeld)
+                if (point.sync.state != LightSync.LightSync.STATE_PHYSICS)
                 {
+                    //something else is moving it
+                    movedPoint = true;
                     continue;
                 }
-                movedPoint = point.Unstretch(simSpeed, stiffness) || movedPoint;
+                movedPoint = point.Unstretch(simSpeed, stiffness, poofiness) || movedPoint;
             }
-            if (movedPoint || heldCount > 0)
+
+            if (movedPoint)
             {
-                SendCustomEventDelayedFrames(nameof(Unstretch), 1);
+                SendCustomEventDelayedFrames(nameof(UpdateLoop), 1);
             }
         }
 
@@ -99,7 +110,7 @@ namespace MMMaellon.Blankie
         {
             foreach (var point in points)
             {
-                List<Transform> closeEnoughNeighbors = new List<Transform>();
+                List<BlankiePoint> closeEnoughNeighbors = new List<BlankiePoint>();
                 foreach (var neighbor in points)
                 {
                     if (neighbor == point)
@@ -108,7 +119,7 @@ namespace MMMaellon.Blankie
                     }
                     if (Vector3.Distance(neighbor.transform.position, point.transform.position) < neighborDistance)
                     {
-                        closeEnoughNeighbors.Add(neighbor.transform);
+                        closeEnoughNeighbors.Add(neighbor);
                     }
                 }
                 point.neighbors = closeEnoughNeighbors.ToArray();

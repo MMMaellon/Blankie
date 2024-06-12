@@ -376,9 +376,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 2604891922902581759}
   sync: {fileID: 1344199053771326837}
   neighbors:
-  - {fileID: 5487437666996574866}
-  - {fileID: 8800498053565435492}
-  - {fileID: 8124039546531232449}
+  - {fileID: 410916407734429445}
+  - {fileID: 6118405223549459222}
+  - {fileID: 4367080322262030507}
   neighborOffsets:
   - {x: 0, y: -0.000000059604645, z: -0.5}
   - {x: -0.754899, y: 0, z: 0}
@@ -704,9 +704,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 2478906474846177731}
   sync: {fileID: 7487214280452175904}
   neighbors:
-  - {fileID: 5123734981569961802}
-  - {fileID: 3548472311447941152}
-  - {fileID: 2885964554131128607}
+  - {fileID: 5362946958366307659}
+  - {fileID: 3058009099247814585}
+  - {fileID: 910720803767356342}
   neighborOffsets:
   - {x: 0.7036081, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -980,10 +980,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8445162089345279979}
   sync: {fileID: 3444180783115221981}
   neighbors:
-  - {fileID: 2287000398046327200}
-  - {fileID: 5487437666996574866}
-  - {fileID: 8124039546531232449}
-  - {fileID: 6828833273671322092}
+  - {fileID: 5072283263776729245}
+  - {fileID: 410916407734429445}
+  - {fileID: 4367080322262030507}
+  - {fileID: 1622313601049519749}
   neighborOffsets:
   - {x: 0.7872972, y: 0, z: 0}
   - {x: -0.76644444, y: 0, z: 0}
@@ -1548,9 +1548,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 9000985613662440031}
   sync: {fileID: 237930406013398143}
   neighbors:
-  - {fileID: 5123734981569961802}
-  - {fileID: 515035957261781739}
-  - {fileID: 3548472311447941152}
+  - {fileID: 5362946958366307659}
+  - {fileID: 7044564743535860719}
+  - {fileID: 3058009099247814585}
   neighborOffsets:
   - {x: 0, y: -0.000000059604645, z: -0.5}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -2779,9 +2779,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 7487218256593862910}
   sync: {fileID: 5135519413734132099}
   neighbors:
-  - {fileID: 3593961760462527039}
-  - {fileID: 3994446802340256928}
-  - {fileID: 5355695304489586807}
+  - {fileID: 8168395605461375815}
+  - {fileID: 7177328327257014397}
+  - {fileID: 2977305366258140240}
   neighborOffsets:
   - {x: 0.7872972, y: 0, z: 0}
   - {x: -0.76644444, y: 0, z: 0}
@@ -4180,9 +4180,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4105139723549487827}
   sync: {fileID: 7407634863552671948}
   neighbors:
-  - {fileID: 3114855962400564179}
-  - {fileID: 8841629196992370403}
-  - {fileID: 6338892922281417863}
+  - {fileID: 9070633534792232640}
+  - {fileID: 6114228154516459562}
+  - {fileID: 7612013666784214478}
   neighborOffsets:
   - {x: 0.7872972, y: 0, z: 0}
   - {x: -0.76644444, y: 0, z: 0}
@@ -4859,10 +4859,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8755387937830034815}
   sync: {fileID: 8098064061555504951}
   neighbors:
-  - {fileID: 3994446802340256928}
-  - {fileID: 8411925496763831852}
-  - {fileID: 6591525774090086167}
-  - {fileID: 5355695304489586807}
+  - {fileID: 7177328327257014397}
+  - {fileID: 1848933505560810996}
+  - {fileID: 3560215216917925548}
+  - {fileID: 2977305366258140240}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -5095,7 +5095,8 @@ MonoBehaviour:
   - {fileID: 7612013666784214478}
   - {fileID: 1622313601049519749}
   simSpeed: 1
-  stiffness: 0.5
+  stiffness: 0
+  poofiness: 0.25
   neighborDistance: 0.862
   useGravity: 0
   reconfigureBlankie: 0
@@ -5823,9 +5824,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4317346049176102352}
   sync: {fileID: 5713202533656155808}
   neighbors:
-  - {fileID: 7853041472344403378}
-  - {fileID: 3432307022851940461}
-  - {fileID: 4023658534341207297}
+  - {fileID: 6860457063372346801}
+  - {fileID: 1632539184195143871}
+  - {fileID: 4962589098413847984}
   neighborOffsets:
   - {x: 0.754899, y: 0, z: 0}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -6099,10 +6100,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4926802669234857516}
   sync: {fileID: 7169905236732695313}
   neighbors:
-  - {fileID: 1862948994934762399}
-  - {fileID: 8411925496763831852}
-  - {fileID: 5355695304489586807}
-  - {fileID: 6338892922281417863}
+  - {fileID: 6797084821259365719}
+  - {fileID: 1848933505560810996}
+  - {fileID: 2977305366258140240}
+  - {fileID: 7612013666784214478}
   neighborOffsets:
   - {x: 0.7872972, y: 0, z: 0}
   - {x: -0.76644444, y: 0, z: 0}
@@ -6803,8 +6804,8 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 8032482715244040463}
   sync: {fileID: 8025731948155899275}
   neighbors:
-  - {fileID: 493195029809946574}
-  - {fileID: 3114855962400564179}
+  - {fileID: 7122246148330166163}
+  - {fileID: 9070633534792232640}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: -0.7036081, y: 0, z: 0}
@@ -7264,10 +7265,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 305363066499071223}
   sync: {fileID: 3729370950174764871}
   neighbors:
-  - {fileID: 9217819245060579211}
-  - {fileID: 3593961760462527039}
-  - {fileID: 1862948994934762399}
-  - {fileID: 5355695304489586807}
+  - {fileID: 2827249246039004058}
+  - {fileID: 8168395605461375815}
+  - {fileID: 6797084821259365719}
+  - {fileID: 2977305366258140240}
   neighborOffsets:
   - {x: 0.7036081, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -7624,8 +7625,8 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 358437698454024051}
   sync: {fileID: 2556880527866048255}
   neighbors:
-  - {fileID: 3994446802340256928}
-  - {fileID: 6591525774090086167}
+  - {fileID: 7177328327257014397}
+  - {fileID: 3560215216917925548}
   neighborOffsets:
   - {x: 0.754899, y: 0, z: 0}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -7980,10 +7981,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4541750384946892212}
   sync: {fileID: 3264362635604598450}
   neighbors:
-  - {fileID: 515035957261781739}
-  - {fileID: 2287000398046327200}
-  - {fileID: 3548472311447941152}
-  - {fileID: 6828833273671322092}
+  - {fileID: 7044564743535860719}
+  - {fileID: 5072283263776729245}
+  - {fileID: 3058009099247814585}
+  - {fileID: 1622313601049519749}
   neighborOffsets:
   - {x: 0.7036081, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -8766,9 +8767,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5654391957368312185}
   sync: {fileID: 8516187900801362466}
   neighbors:
-  - {fileID: 9217819245060579211}
-  - {fileID: 493195029809946574}
-  - {fileID: 1862948994934762399}
+  - {fileID: 2827249246039004058}
+  - {fileID: 7122246148330166163}
+  - {fileID: 6797084821259365719}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -9094,8 +9095,8 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 6058294031558545789}
   sync: {fileID: 2187744729826453727}
   neighbors:
-  - {fileID: 9217819245060579211}
-  - {fileID: 3593961760462527039}
+  - {fileID: 2827249246039004058}
+  - {fileID: 8168395605461375815}
   neighborOffsets:
   - {x: 0, y: -0.000000059604645, z: -0.5}
   - {x: -0.7036081, y: 0, z: 0}
@@ -9502,9 +9503,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4798188083653542576}
   sync: {fileID: 377466238963299502}
   neighbors:
-  - {fileID: 5570757232696255689}
-  - {fileID: 2287000398046327200}
-  - {fileID: 8124039546531232449}
+  - {fileID: 2265183456981368952}
+  - {fileID: 5072283263776729245}
+  - {fileID: 4367080322262030507}
   neighborOffsets:
   - {x: 0.7036081, y: 0, z: 0}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -9830,9 +9831,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1986049582277163273}
   sync: {fileID: 2000485400414222558}
   neighbors:
-  - {fileID: 8411925496763831852}
-  - {fileID: 6591525774090086167}
-  - {fileID: 4360378824328851150}
+  - {fileID: 1848933505560810996}
+  - {fileID: 3560215216917925548}
+  - {fileID: 2568208020198396820}
   neighborOffsets:
   - {x: 0.754899, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -10106,10 +10107,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 7090097928129424904}
   sync: {fileID: 7515579293226862578}
   neighbors:
-  - {fileID: 493195029809946574}
-  - {fileID: 3114855962400564179}
-  - {fileID: 1862948994934762399}
-  - {fileID: 6338892922281417863}
+  - {fileID: 7122246148330166163}
+  - {fileID: 9070633534792232640}
+  - {fileID: 6797084821259365719}
+  - {fileID: 7612013666784214478}
   neighborOffsets:
   - {x: 0.7036081, y: 0, z: 0}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -10735,10 +10736,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5184867028922911577}
   sync: {fileID: 5990538666170043108}
   neighbors:
-  - {fileID: 8841629196992370403}
-  - {fileID: 8411925496763831852}
-  - {fileID: 4360378824328851150}
-  - {fileID: 6338892922281417863}
+  - {fileID: 6114228154516459562}
+  - {fileID: 1848933505560810996}
+  - {fileID: 2568208020198396820}
+  - {fileID: 7612013666784214478}
   neighborOffsets:
   - {x: 0, y: -0.000000059604645, z: -0.5}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -11251,9 +11252,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1630162877227989363}
   sync: {fileID: 4622052518197046015}
   neighbors:
-  - {fileID: 7853041472344403378}
-  - {fileID: 3432307022851940461}
-  - {fileID: 2885964554131128607}
+  - {fileID: 6860457063372346801}
+  - {fileID: 1632539184195143871}
+  - {fileID: 910720803767356342}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: -0.754899, y: 0, z: 0}
@@ -21034,9 +21035,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 9209624475392754539}
   sync: {fileID: 2860784818873219184}
   neighbors:
-  - {fileID: 5570757232696255689}
-  - {fileID: 515035957261781739}
-  - {fileID: 2287000398046327200}
+  - {fileID: 2265183456981368952}
+  - {fileID: 7044564743535860719}
+  - {fileID: 5072283263776729245}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: 0, y: -0.000000059604645, z: -0.5}
@@ -21900,10 +21901,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 4298037559960874100}
   sync: {fileID: 4268856704732182922}
   neighbors:
-  - {fileID: 3548472311447941152}
-  - {fileID: 7853041472344403378}
-  - {fileID: 2885964554131128607}
-  - {fileID: 6828833273671322092}
+  - {fileID: 3058009099247814585}
+  - {fileID: 6860457063372346801}
+  - {fileID: 910720803767356342}
+  - {fileID: 1622313601049519749}
   neighborOffsets:
   - {x: 0.7872972, y: 0, z: 0}
   - {x: -0.76644444, y: 0, z: 0}
@@ -22396,9 +22397,9 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 6380156877058127440}
   sync: {fileID: 7827247632338579545}
   neighbors:
-  - {fileID: 5487437666996574866}
-  - {fileID: 8800498053565435492}
-  - {fileID: 4023658534341207297}
+  - {fileID: 410916407734429445}
+  - {fileID: 6118405223549459222}
+  - {fileID: 4962589098413847984}
   neighborOffsets:
   - {x: 0.754899, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -22672,8 +22673,8 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 1123189319797229733}
   sync: {fileID: 7735747788116818636}
   neighbors:
-  - {fileID: 8841629196992370403}
-  - {fileID: 4360378824328851150}
+  - {fileID: 6114228154516459562}
+  - {fileID: 2568208020198396820}
   neighborOffsets:
   - {x: 0.754899, y: 0, z: 0}
   - {x: 0, y: 0.000000059604645, z: 0.5}
@@ -23745,10 +23746,10 @@ MonoBehaviour:
   _udonSharpBackingUdonBehaviour: {fileID: 5261493770564296168}
   sync: {fileID: 984603237735990670}
   neighbors:
-  - {fileID: 5487437666996574866}
-  - {fileID: 7853041472344403378}
-  - {fileID: 4023658534341207297}
-  - {fileID: 6828833273671322092}
+  - {fileID: 410916407734429445}
+  - {fileID: 6860457063372346801}
+  - {fileID: 4962589098413847984}
+  - {fileID: 1622313601049519749}
   neighborOffsets:
   - {x: 0, y: 0.000000059604645, z: 0.5}
   - {x: 0, y: -0.000000059604645, z: -0.5}
