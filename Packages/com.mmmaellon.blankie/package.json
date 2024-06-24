@@ -3,7 +3,7 @@
     "displayName": "Blankie",
     "version": "1.4.0",
     "unity": "2022.3",
-    "description": "",
+    "description": "VRChat prefab for an interactive blanket.",
     "url": "https://github.com/MMMaellon/blankie.git",
     "dependencies": {},
     "gitDependencies": {},
