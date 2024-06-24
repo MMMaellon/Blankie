@@ -1,15 +1,17 @@
 ﻿using UnityEngine;
-using UnityEditor;
 using VRC.SDKBase;
 using MMMaellon.LightSync;
-using System.Collections.Generic;
 using UdonSharp;
-using System.Linq;
 using System;
-using UdonSharpEditor;
 using VRC.SDK3.Components;
 using VRC.SDKBase.Validation.Performance;
 using VRC.Udon;
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
+using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
+using UdonSharpEditor;
+#endif
 
 namespace MMMaellon.Blankie
 {
@@ -182,6 +184,8 @@ namespace MMMaellon.Blankie
                 point.sync = point.GetComponent<LightSync.LightSync>();
                 point.parent = transform;
                 point.sync.eventListeners = point.sync.eventListeners.Union(new Component[] { this }).ToArray();
+                var serlializedPoint = new SerializedObject(point);
+                serlializedPoint.Update();
             }
         }
 
