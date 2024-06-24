@@ -1,4 +1,5 @@
 ﻿
+using MMMaellon.LightSync;
 using UdonSharp;
 using UnityEngine;
 
@@ -103,5 +104,11 @@ namespace MMMaellon.Blankie
             }
             centroid /= neighbors.Length;
         }
+#if !COMPILER_UDONSHARP && UNITY_EDITOR
+        public void Reset()
+        {
+            sync = GetComponent<LightSync.LightSync>();
+        }
+#endif
     }
 }
